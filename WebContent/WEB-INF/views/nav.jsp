@@ -20,7 +20,7 @@
           <a class="nav-link active" href="/shop/list">가게 찾기</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/echo/board">에코마당</a>
+          <a class="nav-link active" href="/ecoboard">에코마당</a>
         </li>
       </ul>
       <!-- nav 왼쪽 끝 -->
