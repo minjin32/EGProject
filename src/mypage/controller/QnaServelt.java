@@ -1,4 +1,4 @@
-package board.controller;
+package mypage.controller;
 
 import java.io.IOException;
 
@@ -8,31 +8,22 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-@WebServlet("/board/noticewrite")
-public class NoticeWriteServlet extends HttpServlet {
+@WebServlet("/qna")
+public class QnaServelt extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public NoticeWriteServlet() {
+    public QnaServelt() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/board/noticeWrite.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/mypage/qna.jsp");
 		view.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF8");
-		
-		String subject = request.getParameter("subject");
-		String content = request.getParameter("content");
-		
-		
-		
-		
-		
-		
+		doGet(request, response);
 	}
+
 }
